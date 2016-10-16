@@ -2,6 +2,7 @@ MainMenu = { }
 
 
 MainMenu.circle = tss.rendering.Circle(100.0);
+MainMenu.img = tss.rendering.Sprite("Assets/Graphics/sapa-vietnam.jpg");
 
 function MainMenu.init()
     MainMenu.circle:SetFillColor(tss.gui.colors.Green);
@@ -12,6 +13,8 @@ function MainMenu.update(dt)
 end
 
 function MainMenu.draw()
+    MainMenu.img:Draw();
+
     MainMenu.circle:Draw();
 end
 
@@ -37,6 +40,7 @@ function MainMenu.keyCodePressed(key)
 end
 
 function MainMenu.shutdown()
+    MainMenu.img = nil;
     MainMenu.circle = nil;
 end
 

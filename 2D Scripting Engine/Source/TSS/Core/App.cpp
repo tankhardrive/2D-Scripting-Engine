@@ -1,6 +1,7 @@
 #include "App.h"
 #include "Utility/Util.h"
 #include "Scripting/LuaManager.h"
+#include "Rendering/TextureManager.h"
 
 namespace TSS
 {
@@ -21,6 +22,7 @@ namespace TSS
 		void App::Run()
 		{
 			// Init all singletons
+			TSS::Rendering::TextureMgr::GetInstance()->Init();
 			TSS::Scripting::LuaManager::GetInstance()->Init(mWindow);
 
 			// Init our clock
@@ -52,6 +54,7 @@ namespace TSS
 					}
 				}
 
+				TSS::Rendering::TextureMgr::GetInstance()->Update(dt);
 				TSS::Scripting::LuaManager::GetInstance()->Update(dt);
 
 				// Clear the our window
@@ -67,6 +70,7 @@ namespace TSS
 
 			// clean up all singletons
 			TSS::Scripting::LuaManager::GetInstance()->Shutdown();
+			TSS::Rendering::TextureMgr::GetInstance()->Shutdown();
 		}
 
 	} // namespace Core

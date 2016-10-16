@@ -5,6 +5,7 @@
 #include "Scripting/ScriptingDefs.h"
 #include "Scripting/LuaManager.h"
 #include "Rendering/IntRect.h"
+#include "Rendering/TextureManager.h"
 
 namespace TSS
 {
@@ -20,26 +21,17 @@ namespace TSS
 				Sprite() :sf::Sprite() { }
 				Sprite(const char* file) :sf::Sprite()
 				{
-					if (mTex.loadFromFile(file))
-					{
-						mTex.setSmooth(true);
-						sf::Sprite::setTexture(mTex);
-					}
+					sf::Sprite::setTexture(TSS::Rendering::TextureMgr::GetInstance()->LoadTexture(file));
 				}
 
 				~Sprite() 
 				{ 
-					// Game is crashing using a sprite and closing the console window. need to look into that...
-					mTex.bind(NULL); 
+					
 				}
 
 				void loadTexture(const char* file)
 				{
-					if (mTex.loadFromFile(file))
-					{
-						mTex.setSmooth(true);
-						sf::Sprite::setTexture(mTex);
-					}
+					sf::Sprite::setTexture(TSS::Rendering::TextureMgr::GetInstance()->LoadTexture(file));
 				}
 
 				void Draw()
@@ -93,9 +85,6 @@ namespace TSS
 				}
 
 			private:
-
-				// this texture should live in a manager class so we don't load a new image for every sprite
-				sf::Texture mTex;
 
 			};
 
