@@ -1,5 +1,6 @@
 #include "LuaManager.h"
 #include <iostream>
+#include <stdio.h>
 
 #include "GUI/Text.h"
 #include "GUI/Color.h"
@@ -54,6 +55,7 @@ namespace TSS
 			RunString("tss.consoleString = tss.gui.Text();");
 			RunString("tss.consoleString:SetText('');");
 			RunString("tss.consoleString:SetVisible(false);");
+			RunString("tss.dt = 0;");
 
 			// Load our main script, main.lua
 			RunFile("Source/TSS/Scripting/EngineFuncs.lua");
@@ -97,6 +99,10 @@ namespace TSS
 
 			// Call update
 			luabridge::LuaRef tss = luabridge::getGlobal(mLuaState, "tss");
+
+			char buffer[50];
+			sprintf_s(buffer, 50, "tss.dt = %f", delta);
+			RunString(buffer);
 
 			if (tss["update"].isFunction())
 			{

@@ -27,7 +27,11 @@ namespace TSS
 					}
 				}
 
-				~Sprite() { mTex.bind(NULL); }
+				~Sprite() 
+				{ 
+					// Game is crashing using a sprite and closing the console window. need to look into that...
+					mTex.bind(NULL); 
+				}
 
 				void loadTexture(const char* file)
 				{

@@ -1,4 +1,4 @@
-﻿Build started 10/16/2016 4:34:36 AM.
+﻿Build started 10/16/2016 5:25:45 AM.
      1>Project "D:\Engine Dev\2D Scripting Engine\2D Scripting Engine\2D Scripting Engine.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Engine Dev\2D Scripting Engine\2D Scripting Engine\Source\TSS" /I"C:\SFML-2.3\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source\TSS\Scripting\LuaManager.cpp
@@ -15,4 +15,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.96
+Time Elapsed 00:00:01.04

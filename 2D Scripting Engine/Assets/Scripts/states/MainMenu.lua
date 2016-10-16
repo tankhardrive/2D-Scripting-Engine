@@ -16,7 +16,7 @@ function MainMenu.draw()
 end
 
 function MainMenu.keyCodePressed(key)
-    local step = 20000;
+    local step = 15000;
 
     if key == tss.input.w then
         MainMenu.circle:SetPosY(MainMenu.circle:GetPosY() - step * tss.dt);

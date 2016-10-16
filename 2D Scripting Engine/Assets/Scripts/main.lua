@@ -8,7 +8,6 @@ package.path = package.path .. ";../2D Scripting Engine/Assets/Scripts/states/?.
 tss.frameCounter = 0;
 tss.fps = 0;
 tss.theTime = 0;
-tss.dt = 0;
 
 --tss.img = tss.rendering.Sprite("Assets/Graphics/sapa-vietnam.jpg");
 
@@ -32,7 +31,6 @@ end
 function tss.update(dt)
     --print("main.lua -- update(" .. dt .. ")");
 
-    tss.dt = dt;
     tss.frameCounter = tss.frameCounter + 1;
     tss.theTime = tss.theTime + dt;
 
@@ -89,7 +87,6 @@ function tss.shutdown()
     end
 
     tss.img = nil;
-    tss.circle = nil
     tss.frameCounter = nil;
     tss.fps = nil;
     tss.theTime = nil;
