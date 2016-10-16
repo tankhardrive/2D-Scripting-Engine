@@ -74,6 +74,7 @@
     <ClCompile Include="Source\Main.cpp" />
     <ClCompile Include="Source\TSS\Core\App.cpp" />
     <ClCompile Include="Source\TSS\GUI\Text.cpp" />
+    <ClCompile Include="Source\TSS\Rendering\TextureManager.cpp" />
     <ClCompile Include="Source\TSS\Scripting\LuaManager.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +84,7 @@
     <ClInclude Include="Source\TSS\Rendering\Circle.h" />
     <ClInclude Include="Source\TSS\Rendering\IntRect.h" />
     <ClInclude Include="Source\TSS\Rendering\Sprite.h" />
+    <ClInclude Include="Source\TSS\Rendering\TextureManager.h" />
     <ClInclude Include="Source\TSS\Scripting\LuaManager.h" />
     <ClInclude Include="Source\TSS\Scripting\ScriptingDefs.h" />
     <ClInclude Include="Source\TSS\Utility\Util.h" />

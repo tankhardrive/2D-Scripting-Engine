@@ -72,6 +72,9 @@
     <ClCompile Include="Source\TSS\GUI\Text.cpp">
       <Filter>Source Files\TSS\GUI</Filter>
     </ClCompile>
+    <ClCompile Include="Source\TSS\Rendering\TextureManager.cpp">
+      <Filter>Source Files\TSS\Rendering</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\TSS\Core\App.h">
@@ -99,6 +102,9 @@
       <Filter>Header Files\TSS\Rendering</Filter>
     </ClInclude>
     <ClInclude Include="Source\TSS\Rendering\IntRect.h">
+      <Filter>Header Files\TSS\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TSS\Rendering\TextureManager.h">
       <Filter>Header Files\TSS\Rendering</Filter>
     </ClInclude>
   </ItemGroup>
