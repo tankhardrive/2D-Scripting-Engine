@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\TSS">
+      <UniqueIdentifier>{93ea2e64-3931-4130-abb7-948c09c86c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TSS\Core">
+      <UniqueIdentifier>{98ed8862-2a26-4ff3-8924-338fd83281fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TSS">
+      <UniqueIdentifier>{58d427a3-d378-47ca-a99f-757ddd5b0c30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TSS\Core">
+      <UniqueIdentifier>{945780ca-d009-4aa0-aa5b-fa0520f93965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TSS\GUI">
+      <UniqueIdentifier>{5483065f-ae1d-49a4-8ecc-050cbed7fad4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TSS\Rendering">
+      <UniqueIdentifier>{055418ea-5d5a-4bbb-87ac-b54f77f3ca58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TSS\Scripting">
+      <UniqueIdentifier>{6123c41e-bd19-4ca1-b811-4c400c74bb99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TSS\GUI">
+      <UniqueIdentifier>{a600408b-f6b0-4d27-abdc-06e64b539087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TSS\Scripting">
+      <UniqueIdentifier>{73bdc4b2-9ec1-4626-a3e7-2cd7aa611480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TSS\Rendering">
+      <UniqueIdentifier>{c51e8d9f-e1ed-40ce-aea7-97edfaa3c34a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TSS\Core\IO">
+      <UniqueIdentifier>{338b5652-dce7-4671-8f6b-33599af6b078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TSS\Core\System">
+      <UniqueIdentifier>{abb523ae-f254-43b3-8435-2ef69cbafb42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TSS\Utility">
+      <UniqueIdentifier>{5a39055f-4618-438b-b067-5bc69ccf16c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TSS\Utility">
+      <UniqueIdentifier>{c0018d1e-750c-4937-be58-edfe6607c41c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TSS\Script">
+      <UniqueIdentifier>{4de6202e-d4ae-4fe9-b579-f116b72c5879}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TSS\Core\App.cpp">
+      <Filter>Source Files\TSS\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TSS\Scripting\LuaManager.cpp">
+      <Filter>Source Files\TSS\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TSS\GUI\Text.cpp">
+      <Filter>Source Files\TSS\GUI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\TSS\Core\App.h">
+      <Filter>Header Files\TSS\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TSS\Utility\Util.h">
+      <Filter>Header Files\TSS\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TSS\Scripting\LuaManager.h">
+      <Filter>Header Files\TSS\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TSS\Scripting\ScriptingDefs.h">
+      <Filter>Header Files\TSS\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TSS\GUI\Text.h">
+      <Filter>Header Files\TSS\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TSS\GUI\Color.h">
+      <Filter>Header Files\TSS\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TSS\Rendering\Circle.h">
+      <Filter>Header Files\TSS\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TSS\Rendering\Sprite.h">
+      <Filter>Header Files\TSS\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TSS\Rendering\IntRect.h">
+      <Filter>Header Files\TSS\Rendering</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
