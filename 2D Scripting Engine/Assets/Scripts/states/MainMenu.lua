@@ -39,6 +39,14 @@ function MainMenu.keyCodePressed(key)
 
 end
 
+function MainMenu.mousePressed(mouse)
+
+    if mouse == tss.input.mouse.left then
+        print("Left mouse button pressed");
+    end
+
+end
+
 function MainMenu.shutdown()
     MainMenu.img = nil;
     MainMenu.circle = nil;

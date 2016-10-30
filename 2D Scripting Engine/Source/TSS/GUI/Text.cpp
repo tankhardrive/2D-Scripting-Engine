@@ -62,7 +62,10 @@ namespace TSS
 
 		void Text::Draw()
 		{
-			TSS::Scripting::LuaManager::GetInstance()->GetRenderWindow()->draw(mText);
+			if (mVisible)
+			{
+				TSS::Scripting::LuaManager::GetInstance()->GetRenderWindow()->draw(mText);
+			}
 		}
 
 		std::string Text::GetText()

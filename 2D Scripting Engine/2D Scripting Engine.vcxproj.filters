@@ -75,6 +75,9 @@
     <ClCompile Include="Source\TSS\Rendering\TextureManager.cpp">
       <Filter>Source Files\TSS\Rendering</Filter>
     </ClCompile>
+    <ClCompile Include="Source\TSS\GUI\Button.cpp">
+      <Filter>Source Files\TSS\GUI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\TSS\Core\App.h">
@@ -106,6 +109,9 @@
     </ClInclude>
     <ClInclude Include="Source\TSS\Rendering\TextureManager.h">
       <Filter>Header Files\TSS\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TSS\GUI\Button.h">
+      <Filter>Header Files\TSS\GUI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

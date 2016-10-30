@@ -2,8 +2,9 @@
 #include <iostream>
 #include <stdio.h>
 
-#include "GUI/Text.h"
+#include "GUI/Button.h"
 #include "GUI/Color.h"
+#include "GUI/Text.h"
 #include "Rendering/Circle.h"
 #include "Rendering/Sprite.h"
 #include "Rendering/IntRect.h"
@@ -39,12 +40,15 @@ namespace TSS
 			RunString("tss = { }");
 			RunString("tss.gui = { }");
 			RunString("tss.gui.colors = { }");
-			RunString("tss.input = { }");  
+			RunString("tss.input = { }");
+			RunString("tss.input.mouse = { }");
 
 			RegisterEnums();
 			RegisterLuaFunctions();
-			TSS::GUI::Text::RegisterWithLua();
+
+			TSS::GUI::Button::RegisterWithLua();
 			TSS::GUI::Color::RegisterWithLua();
+			TSS::GUI::Text::RegisterWithLua();
 			TSS::Rendering::Rect::RegisterWithLua();
 			TSS::Rendering::Circle::RegisterWithLua();
 			TSS::Rendering::Sprite::RegisterWithLua();
@@ -141,6 +145,17 @@ namespace TSS
 			if (tss["keyPressed"].isFunction())
 			{
 				tss["keyPressed"](key);
+			}
+		}
+
+		void LuaManager::MousePressed(sf::Mouse::Button button)
+		{
+			// Call mouse button pressed
+			luabridge::LuaRef tss = luabridge::getGlobal(mLuaState, "tss");
+
+			if (tss["mousePressed"].isFunction())
+			{
+				tss["mousePressed"](static_cast<int>(button));
 			}
 		}
 
@@ -251,6 +266,7 @@ namespace TSS
 
 		void LuaManager::RegisterEnums()
 		{
+			// Keyboard Input
 			RunString("tss.input.unknown = -1;");
 			RunString("tss.input.a = 0;");
 			RunString("tss.input.b = 1;");
@@ -354,6 +370,13 @@ namespace TSS
 			RunString("tss.input.f15 = 99;");
 			RunString("tss.input.pause = 100;");
 			RunString("tss.input.keycount = 101;");
+
+			// Mouse Input
+			RunString("tss.input.mouse.left = 0;");
+			RunString("tss.input.mouse.right = 1;");
+			RunString("tss.input.mouse.middle = 2;");
+			RunString("tss.input.mouse.xButton1 = 3;");
+			RunString("tss.input.mouse.xButton2 = 4;");
 		}
 
 	} // namespace Scripting

@@ -78,6 +78,10 @@ function tss.keyPressed(char)
 
 end
 
+function tss.mousePressed(mouse)
+	tss.currentState.mousePressed(mouse);
+end
+
 
 function tss.shutdown()
     print("main.lua -- shutdown()");

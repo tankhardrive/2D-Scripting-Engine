@@ -1,11 +1,14 @@
-﻿Build started 10/16/2016 6:00:47 AM.
+﻿Build started 10/30/2016 1:28:02 AM.
      1>Project "D:\Engine Dev\2D Scripting Engine\2D Scripting Engine\2D Scripting Engine.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Engine Dev\2D Scripting Engine\2D Scripting Engine\Source\TSS" /I"C:\SFML-2.3\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source\TSS\Rendering\TextureManager.cpp
-         TextureManager.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Engine Dev\2D Scripting Engine\2D Scripting Engine\Source\TSS" /I"C:\SFML-2.3\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source\TSS\GUI\Button.cpp
+         Button.cpp
+     1>d:\engine dev\2d scripting engine\2d scripting engine\source\tss\gui\button.cpp(45): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>d:\engine dev\2d scripting engine\2d scripting engine\source\tss\gui\button.cpp(46): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Engine Dev\2D Scripting Engine\Debug\2D Scripting Engine.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\lua-5.3" /LIBPATH:"C:\SFML-2.3\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-audio-d.lib" "sfml-network-d.lib" lua53.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Engine Dev\2D Scripting Engine\Debug\2D Scripting Engine.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Engine Dev\2D Scripting Engine\Debug\2D Scripting Engine.lib" /MACHINE:X86 Debug\Main.obj
          Debug\App.obj
+         Debug\Button.obj
          Debug\Text.obj
          Debug\TextureManager.obj
          Debug\LuaManager.obj
@@ -14,4 +17,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.92
+Time Elapsed 00:00:00.99

@@ -52,6 +52,10 @@ namespace TSS
 					{
 						TSS::Scripting::LuaManager::GetInstance()->KeyCodePressed(event.key.code);
 					}
+					else if (event.type == sf::Event::MouseButtonPressed)
+					{
+						TSS::Scripting::LuaManager::GetInstance()->MousePressed(event.mouseButton.button);
+					}
 				}
 
 				TSS::Rendering::TextureMgr::GetInstance()->Update(dt);

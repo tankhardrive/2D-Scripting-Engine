@@ -23,6 +23,8 @@ namespace TSS
 			void KeyPressed(char key);
 			void KeyCodePressed(sf::Keyboard::Key key);
 
+			void MousePressed(sf::Mouse::Button button);
+
 			void RunString(const char* str);
 			void RunFile(const char* file);
 

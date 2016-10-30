@@ -73,12 +73,14 @@
   <ItemGroup>
     <ClCompile Include="Source\Main.cpp" />
     <ClCompile Include="Source\TSS\Core\App.cpp" />
+    <ClCompile Include="Source\TSS\GUI\Button.cpp" />
     <ClCompile Include="Source\TSS\GUI\Text.cpp" />
     <ClCompile Include="Source\TSS\Rendering\TextureManager.cpp" />
     <ClCompile Include="Source\TSS\Scripting\LuaManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\TSS\Core\App.h" />
+    <ClInclude Include="Source\TSS\GUI\Button.h" />
     <ClInclude Include="Source\TSS\GUI\Color.h" />
     <ClInclude Include="Source\TSS\GUI\Text.h" />
     <ClInclude Include="Source\TSS\Rendering\Circle.h" />
